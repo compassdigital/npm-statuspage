@@ -44,6 +44,10 @@ class StatusPage {
   generateComponentsUrl() {
     return this.generatePagePath() + '/components.json'
   }
+  
+  generateSubscriberPath(subscriberId) {
+    return this.generatePagePath() + `/subscribers/${subscriberId}.json`
+  }
 
   generateSubscriberPath(subscriberId) {
     return this.generatePagePath() + `/subscribers/${subscriberId}.json`
